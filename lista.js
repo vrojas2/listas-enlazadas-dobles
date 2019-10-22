@@ -2,6 +2,7 @@ export default class Lista {
     constructor() {
       this._inicio = null;
     }
+
     mostrarLista(div) {
       div.innerHTML = " ";
       if (this._inicio) {
@@ -12,6 +13,7 @@ export default class Lista {
         } while (temp);
       }
     }
+
     invertirLista(div) {
       div.innerHTML = " ";
       let temp = this._inicio;
@@ -23,6 +25,7 @@ export default class Lista {
         temp = temp.anterior;
       }
     }
+
     actualizarUnElemento(codigo, nuevoElemento) {
       let temp = this._inicio;
       while (temp) {
@@ -35,6 +38,7 @@ export default class Lista {
         temp = temp.siguiente;
       }
     }
+
     insertarOrdenado(nuevoElemento) {
       if (!this._inicio) {
         this._inicio = nuevoElemento;
@@ -70,6 +74,7 @@ export default class Lista {
         }
       }
     }
+
     borrar(codigo) {
       let temp = this._inicio;
       let count = 0;
@@ -98,6 +103,7 @@ export default class Lista {
       }
       console.log(this._inicio);
     }
+    
     buscar(div, codigo) {
       div.innerHTML = " ";
       let temp = this._inicio;
