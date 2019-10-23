@@ -13,7 +13,7 @@ class Main{
         precio: parseInt(document.querySelector("#precio").value),
         cantidad: parseInt(document.querySelector("#cantidad").value),
         descripcion: (document.querySelector("#descripcion").value),
-      }
+      } 
 
       let art = new Articulo(objCons);
       lista.insertarOrdenado(art);

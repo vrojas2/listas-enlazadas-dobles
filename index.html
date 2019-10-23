@@ -1,57 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Inventario</title>
+    <title>Listas Enlazadas</title>
 </head>
+
 <body>
     <div>
-        <h3>Registro de Articulos</h3>
-        <label>Codigo del Articulo:</label>
-        <input type="text" id="codigo"><br>
+        <h3>Agregar Articulo</h3>
 
-        <label>Nombre del Articulo:</label>
+        <label for="codigo">Codigo: </label>
+        <input type="number" id="codigo"><br>
+
+        <label for="nombre">Nombre: </label>
         <input type="text" id="nombre"><br>
 
-        <label>Precio del Articulo:</label>
-        <input type="text" id="precio"><br>
+        <label for="precio">Precio: </label>
+        <input type="number" id="precio"><br>
 
-        <label>Cantidad de Articulos:</label>
-        <input type="text" id="cantidad"><br>
+        <label for="cantidad">Cantidad: </label>
+        <input type="number" id="cantidad"><br>
 
-        <label>Descripcion del Articulo:</label>
+        <label for="descripcion">Descripcion: </label>
         <input type="text" id="descripcion"><br>
 
-        <button id="registrar" type="button">Registrar</button><br>
-
-        <button id="ordenNormal" type="button">ordenNormal</button><br>
-        <button id="ordenInverso" type="button">ordenInverso</button><br>
-
-        <div id="verInventario"></div><br>
-
-        <label>Posicion:</label>
-        <input type="text" id="posicion">
-
-        <button id="insertar" type="button">insertar</button>
+        <button type="button" id="btnAdd">Agregar Producto</button>
+        <button type="button" id="btnIn">Invertir</button>
+        <div class="insertados" id="insertados"></div>
     </div>
 
     <div>
-        <h3>Consultar Articulo</h3>
-        <input type="text" id="codigoConsulta">
-        <button id="consulta">Consultar</button><br>
-        <div id="mostrarConsulta"></div>
+        <label for="borrar">Introduzca el codigo a borrar: </label>
+        <input type="number" id="borrar"><br>
+        <button type="button" id="btnBorrar">Borrar Producto</button>
     </div>
 
     <div>
-        <h3>Eliminar articulo</h3>
-        <input type="text" id="codigoEliminar">
-        <button id="eliminarCodigo">Eliminar</button>
-        <div id="noEliminado"></div>
+        <h3>Editar Articulo</h3>
+        <label for="antCodigo">Codigo: </label>
+        <input type="number" id="antCodigo"><br>
+
+        <label for="nuevoNombre">Nuevo Nombre: </label>
+        <input type="text" id="nuevoNombre"><br>
+
+        <label for="nuevoPrecio">Nuevo Precio: </label>
+        <input type="number" id="nuevoPrecio"><br>
+
+        <label for="nuevoCantidad">Nuevo Cantidad: </label>
+        <input type="number" id="nuevoCantidad"><br>
+
+        <label for="nuevoDescripcion">Nuevo Descripcion: </label>
+        <input type="text" id="nuevoDescripcion"><br>
+
+        <button type="button" id="btnAct">Editar Producto</button>
     </div>
+
+    <div>
+        <label for="buscar">buscar por codigo: </label>
+        <input type="number" id="buscar"><br>
+        <button type="button" id="btnBuscar">Buscar Producto</button>
+    </div>
+
+    <div id="busqueda" class="insertados"></div>
 
 </body>
 <script src="Main.js" type="module"></script>
+
 </html>

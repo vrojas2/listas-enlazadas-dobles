@@ -64,12 +64,12 @@ export default class Articulo {
     this._descripcion = nuevoDescripcion;
   }
 
-  /*toString(){        
+  toString(){        
     return "Codigo del articulo: "+ this._codigo +" Nombre del articulo: "+ this._nombre +" Prescio del articulo: "+
-    this._precio +" Cantidad de articulos: "+ this._cantidad +" Descripción de articulo: "+this._descripcion;
-  }*/
-
-  toString() {
-    return `${this._codigo}, ${this._nombre}, ${this._precio}, ${this._cantidad}, ${this._descripcion}, ${this._siguiente}`
+    this._precio +" Cantidad de articulos: "+ this._cantidad +" Descripción de articulo: "+this._descripcion + this._siguiente;
   }
+
+  /*toString() {
+    return `${this._codigo}, ${this._nombre}, ${this._precio}, ${this._cantidad}, ${this._descripcion}, ${this._siguiente}`
+  }*/
 }
